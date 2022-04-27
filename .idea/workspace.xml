@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="283b03ac-c4f5-403a-8c20-6b0dde793693" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/client/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/client/ChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/client/UserInputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/client/UserInputHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,15 +116,24 @@
       <workItem from="1650510678395" duration="17000" />
       <workItem from="1650524024110" duration="9678000" />
       <workItem from="1650546852976" duration="5653000" />
-      <workItem from="1651033521832" duration="23553000" />
+      <workItem from="1651033521832" duration="23802000" />
     </task>
+    <task id="LOCAL-00001" summary="BIO demo complete">
+      <created>1651072581578</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651072581578</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="BIO demo complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="BIO demo complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

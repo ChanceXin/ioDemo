@@ -31,7 +31,6 @@ public class ChatClient {
 
     public String receive() throws IOException {
         String msg = null;
-        String fwdmsg = null;
         if (!socket.isInputShutdown()){
             // 如果没读到 可能是因为没有 \n
             msg =  reader.readLine();
@@ -75,8 +74,6 @@ public class ChatClient {
         } finally {
                 close();
         }
-
-
     }
 
     public static void main(String[] args) {
