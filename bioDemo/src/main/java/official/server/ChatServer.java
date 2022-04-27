@@ -52,7 +52,6 @@ public class ChatServer {
 
     public synchronized void forwardMessage(Socket socket,String msg) throws IOException {
         if (socket != null){
-
             int port = socket.getPort();
             for (Integer id : connectedClients.keySet()){
                 if (!id.equals(port)){
@@ -75,7 +74,6 @@ public class ChatServer {
             while (true){
                 // 等待客户端连接
                 Socket socket = serverSocket.accept();
-                System.out.println("客户端【" + socket.getPort() + "】已连接");
                 // 创建ChatHandler线程;
                 new Thread( new ChatHandler(this,socket)).start();
             }

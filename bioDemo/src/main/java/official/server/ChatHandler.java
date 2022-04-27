@@ -16,22 +16,21 @@ public class ChatHandler implements Runnable {
         this.socket = socket;
     }
 
-
     @Override
     public void run() {
         try {
             // 存储新上线用户
             server.addClient(socket);
-
             // 读取用户发送的消息
             BufferedReader reader = new BufferedReader(
                     new InputStreamReader(socket.getInputStream())
             );
             String msg = null;
             while ((msg = reader.readLine()) != null){
-                String fwdmsg = "客户端 【" + socket.getPort() + "】 ：" + msg;
+                // \n 不能省！！！！
+                String fwdmsg = "客户端 【" + socket.getPort() + "】 ：" + msg + "\n";
                 server.forwardMessage(socket,fwdmsg);
-
+                System.out.println("服务器【"+socket.getLocalPort() +"】收到消息："+fwdmsg);
                 if (server.readQuit(msg)){
                     break;
                 }

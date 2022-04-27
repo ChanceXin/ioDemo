@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="283b03ac-c4f5-403a-8c20-6b0dde793693" name="Changes" comment="" />
+    <list default="true" id="283b03ac-c4f5-403a-8c20-6b0dde793693" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/client/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/client/ChatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/client/UserInputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/client/UserInputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatServer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +24,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="281F01WqY60ffmJh8uXDOUA9RPn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,16 +36,43 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.ChatClient">
     <configuration name="Acceptor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.Acceptor" />
       <module name="bioDemo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="official.client.ChatClient" />
+      <module name="bioDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="official.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="official.server.ChatServer" />
+      <module name="bioDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="official.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -53,8 +91,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Acceptor" />
+      <item itemvalue="Application.ChatClient" />
+      <item itemvalue="Application.ChatServer" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChatClient" />
+        <item itemvalue="Application.ChatServer" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.Acceptor" />
@@ -74,12 +121,15 @@
       <workItem from="1650510678395" duration="17000" />
       <workItem from="1650524024110" duration="9678000" />
       <workItem from="1650546852976" duration="5653000" />
-      <workItem from="1651033521832" duration="11426000" />
+      <workItem from="1651033521832" duration="23553000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
