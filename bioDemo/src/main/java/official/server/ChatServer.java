@@ -1,7 +1,5 @@
 package official.server;
 
-import com.sun.corba.se.spi.activation.Server;
-
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -10,17 +8,21 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.*;
 
 public class ChatServer {
+
 
     private int DEFAULT_PORT = 8888;
     private final  String QUIT = "quit";
     private ServerSocket serverSocket;
     //保存 连接Server的客户端的端口，已经Server端创建的Writer对象
     private Map<Integer, Writer> connectedClients;
+    ExecutorService executorService = null;
 
     public ChatServer() {
         connectedClients = new HashMap<>();
+        executorService = Executors.newFixedThreadPool(10);
     }
 
     public synchronized void addClient(Socket socket) throws IOException {
@@ -71,11 +73,12 @@ public class ChatServer {
             serverSocket = new ServerSocket(DEFAULT_PORT);
             System.out.println("服务器端口【"+ serverSocket.getLocalPort()+"】已开启：");
 
-            while (true){
-                // 等待客户端连接
+            while (true){// 建立一个连接 我就生成一个新handler线程去管理
+                // 等待客户端连接，serverSocket一直在监听，返回的是serverSocket fork出来的一个socket
                 Socket socket = serverSocket.accept();
                 // 创建ChatHandler线程;
-                new Thread( new ChatHandler(this,socket)).start();
+//                new Thread( new ChatHandler(this,socket)).start();
+                executorService.submit(new ChatHandler(this,socket));
             }
         } catch (IOException e) {
             e.printStackTrace();

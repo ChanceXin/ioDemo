@@ -29,17 +29,16 @@ public class ChatHandler implements Runnable {
             while ((msg = reader.readLine()) != null){
                 // \n 不能省！！！！
                 String fwdmsg = "客户端 【" + socket.getPort() + "】 ：" + msg + "\n";
-                server.forwardMessage(socket,fwdmsg);
-                System.out.println("服务器【"+socket.getLocalPort() +"】收到消息："+fwdmsg);
                 if (server.readQuit(msg)){
                     break;
                 }
+                server.forwardMessage(socket,fwdmsg);
+                System.out.println("服务器【"+socket.getLocalPort() +"】收到消息："+fwdmsg);
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             try {
-                // 只用移除  不用关闭 socket
                 server.removeClient(socket);
             } catch (IOException e) {
                 e.printStackTrace();
