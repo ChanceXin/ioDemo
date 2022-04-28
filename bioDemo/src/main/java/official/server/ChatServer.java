@@ -54,7 +54,7 @@ public class ChatServer {
                 System.out.println("客户端[" + port + "] 已断开连接到服务器 [" + serverSocket.getLocalPort()+ "]" );
             }
         }else {
-            System.out.println(" socket 为 null ,移除socket失败");
+            System.out.println(" socket :null ,移除socket失败");
         }
     }
 
