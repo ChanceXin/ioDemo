@@ -13,16 +13,22 @@ import java.util.concurrent.*;
 public class ChatServer {
 
 
+
     private int DEFAULT_PORT = 8888;
-    private final  String QUIT = "quit";
+    private final String QUIT = "quit";
     private ServerSocket serverSocket;
     //保存 连接Server的客户端的端口，已经Server端创建的Writer对象
     private Map<Integer, Writer> connectedClients;
-    ExecutorService executorService = null;
+    ThreadPoolExecutor executorService = null;
 
     public ChatServer() {
         connectedClients = new HashMap<>();
-        executorService = Executors.newFixedThreadPool(10);
+        executorService = new ThreadPoolExecutor(
+                10,
+                10,
+                0,
+                TimeUnit.SECONDS,
+                new ArrayBlockingQueue<>(0));
     }
 
     public synchronized void addClient(Socket socket) throws IOException {

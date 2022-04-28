@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="283b03ac-c4f5-403a-8c20-6b0dde793693" name="Changes" comment="BIO demo complete">
+    <list default="true" id="283b03ac-c4f5-403a-8c20-6b0dde793693" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,8 +96,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ChatClient" />
         <item itemvalue="Application.ChatServer" />
+        <item itemvalue="Application.ChatClient" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.Acceptor" />
@@ -120,7 +119,7 @@
       <workItem from="1650546852976" duration="5653000" />
       <workItem from="1651033521832" duration="23856000" />
       <workItem from="1651073224564" duration="443000" />
-      <workItem from="1651115894468" duration="1637000" />
+      <workItem from="1651115894468" duration="6712000" />
     </task>
     <task id="LOCAL-00001" summary="BIO demo complete">
       <created>1651072581578</created>
@@ -136,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651072725899</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Executors modify in server&#10;伪异步IO">
+      <created>1651117716874</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651117716874</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +150,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BIO demo complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="BIO demo complete" />
+    <MESSAGE value="Executors modify in server&#10;伪异步IO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Executors modify in server&#10;伪异步IO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
