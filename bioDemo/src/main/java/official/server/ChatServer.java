@@ -83,7 +83,6 @@ public class ChatServer {
                 // 等待客户端连接，serverSocket一直在监听，返回的是serverSocket fork出来的一个socket
                 Socket socket = serverSocket.accept();
                 // 创建ChatHandler线程;
-//                new Thread( new ChatHandler(this,socket)).start();
                 executorService.submit(new ChatHandler(this,socket));
             }
         } catch (IOException e) {

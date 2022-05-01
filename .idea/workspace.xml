@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="283b03ac-c4f5-403a-8c20-6b0dde793693" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/nioDemo/src/main/java/official/client/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nioDemo/src/main/java/official/client/UserInputHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nioDemo/src/main/java/official/server/ChatHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nioDemo/src/main/java/official/server/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nioDemo/src/main/java/test/Acceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nioDemo/src/main/java/test/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nioDemo/src/main/java/test/Handler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bioDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nioDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nioDemo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nioDemo/src/main/java/FileCopy/FileCopyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/nioDemo/src/main/java/FileCopy/FileCopyDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/nioDemo/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nioDemo/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -42,6 +55,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ioDemo\nioDemo\src\main\java" />
       <recent name="D:\ioDemo\nioDemo\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -136,6 +150,10 @@
       <workItem from="1651033521832" duration="23856000" />
       <workItem from="1651073224564" duration="443000" />
       <workItem from="1651115894468" duration="18437000" />
+      <workItem from="1651206342658" duration="5236000" />
+      <workItem from="1651220374788" duration="2858000" />
+      <workItem from="1651227130874" duration="8436000" />
+      <workItem from="1651390020619" duration="2870000" />
     </task>
     <task id="LOCAL-00001" summary="BIO demo complete">
       <created>1651072581578</created>
@@ -179,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651141530263</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="NIO finish no selector">
+      <created>1651206385084</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651206385084</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

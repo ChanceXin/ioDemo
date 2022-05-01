@@ -67,7 +67,6 @@ public class FileCopyDemo {
                     while ((result = fin.read(buffer)) != -1){
                         // result 在没结束前，的值时 read 一次读取的数量
                         fout.write(buffer,0,result);
-
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
