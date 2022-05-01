@@ -75,7 +75,6 @@ public class ChatServer {
 
     public void start(){
         try {
-
             serverSocket = new ServerSocket(DEFAULT_PORT);
             System.out.println("服务器端口【"+ serverSocket.getLocalPort()+"】已开启：");
 

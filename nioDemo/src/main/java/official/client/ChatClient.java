@@ -1,27 +1,37 @@
 package official.client;
 
 import java.io.*;
+import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetDecoder;
 import java.nio.charset.CharsetEncoder;
 
 public class ChatClient {
-    private final String DEFAULT_SERVER_HOST = "127.0.0.1";
-    private final int DEFAULT_SERVER_PORT = 8888;
-    private final String QUIT = "quit";
-//    public static Charset charset = Charset.forName("UTF-8");
-//
-//    public static CharsetEncoder encoder = charset.newEncoder();
-//
-//    public static CharsetDecoder decoder = charset.newDecoder();
+    private static final String DEFAULT_SERVER_HOST = "127.0.0.1";
+    private static final int DEFAULT_SERVER_PORT = 8888;
+    private static final String QUIT = "quit";
+    private static final int BUFFERSIZE = 1024;
 
-    private Socket socket;
-    private SocketChannel socketChannel;
+    private int port;
+    private String host;
+    private SocketChannel client;
+    private Charset charset = Charset.forName("UTF-8");
+    private Selector selector;
+    private ByteBuffer readBuffer = ByteBuffer.allocate(BUFFERSIZE);
+    private ByteBuffer WeadBuffer = ByteBuffer.allocate(BUFFERSIZE);
 
     public ChatClient(){
+        this(DEFAULT_SERVER_HOST,DEFAULT_SERVER_PORT);
+    }
+
+    public ChatClient(String host, int port){
+        this.port = port;
+        this.host = host;
 
     }
 
@@ -67,16 +77,16 @@ public class ChatClient {
 
     public void start()  {
         try {
-            socket = new Socket(DEFAULT_SERVER_HOST,DEFAULT_SERVER_PORT);
-            socketChannel = socket.getChannel();
+            client = SocketChannel.open();
+            client.configureBlocking(false);
+            selector = Selector.open();
+            client.register(selector, SelectionKey.OP_CONNECT);
+            client.connect(new InetSocketAddress(host,port));
+            while (true){
+                selector.select();
 
-            // 处理用户的输入
-
-            // 读取服务器转发的消息
-            String msgbuffer = null;
-            while ((msg = receive()) != null){
-                System.out.println(msg);
             }
+
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

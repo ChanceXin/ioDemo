@@ -86,6 +86,8 @@ public class ChatServer {
             // 绑定接受连接的端口
             serverSocketChannel.socket().bind(new InetSocketAddress(port));
             // 启动selector，并注册ServerSocketChannel需要被监听的状态
+            // 最后总结一下Selector.open()干了啥：
+            //主要完成建立Pipe，并把pipe的读写文件描述符放入pollArray中,这个pollArray是Selector的枢纽。Linux下则是直接使用系统的pipe。
             selector = Selector.open();
             serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
             System.out.println("服务器端口【"+ port+"】已开启：");
