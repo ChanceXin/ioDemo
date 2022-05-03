@@ -7,14 +7,12 @@ import java.io.InputStreamReader;
 public class UserInputHandler implements Runnable{
     private final String QUIT = "quit";
     private ChatClient chatClient;
-
     public UserInputHandler(ChatClient chatClient){
         this.chatClient = chatClient;
     }
 
     @Override
     public void run() {
-
         try {
             while (true){
                 System.out.println("等待客户端输入：");
