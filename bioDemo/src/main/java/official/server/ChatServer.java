@@ -20,7 +20,6 @@ public class ChatServer {
     //保存 连接Server的客户端的端口，已经Server端创建的Writer对象
     private Map<Integer, Writer> connectedClients;
     ThreadPoolExecutor executorService = null;
-
     public ChatServer() {
         connectedClients = new HashMap<>();
         executorService = new ThreadPoolExecutor(
@@ -28,7 +27,8 @@ public class ChatServer {
                 10,
                 0,
                 TimeUnit.SECONDS,
-                new ArrayBlockingQueue<>(0));
+                new ArrayBlockingQueue<>(5));
+
     }
 
     public synchronized void addClient(Socket socket) throws IOException {
