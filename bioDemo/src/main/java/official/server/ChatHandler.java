@@ -30,10 +30,14 @@ public class ChatHandler implements Runnable {
                 if (server.readQuit(msg)){
                     break;
                 }
+                System.out.println("阻塞一小会");
+                Thread.sleep(5000);
                 server.forwardMessage(socket,fwdmsg);
                 System.out.println("服务器【"+socket.getLocalPort() +"】收到消息："+fwdmsg);
             }
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
             try {
