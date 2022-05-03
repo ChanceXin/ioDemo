@@ -25,48 +25,24 @@ public class ChatServer {
     //解码
     private Charset charset = Charset.forName("UTF-8");
     private int port;
-    //保存 连接Server的客户端的端口，已经Server端创建的Writer对象
-    private Map<Integer, SocketChannel> connectedClients;
 
     public ChatServer(){
         this(DEFAULT_PORT);
     }
+
     public ChatServer(int port) {
         this.port = port;
-        connectedClients = new HashMap<>();
     }
 
-    public synchronized void addClient(SocketChannel socketChannel) throws IOException {
-        if (socketChannel != null){
-            int port = socketChannel.socket().getPort();
-            // 线程不安全
-            connectedClients.put(port,socketChannel);
-            System.out.println("客户端[" + port + "] 已连接到服务器 [" + serverSocketChannel.socket().getLocalPort()+ "]" );
-        }else {
-            System.out.println(" socketChannel 为null 添加失败");
-        }
-    }
-
-    public synchronized void removeClient(SocketChannel socketChannel) throws IOException{
-        if (socketChannel != null){
-            int port = socketChannel.socket().getPort();
-            if (connectedClients.containsKey(port)){
-                socketChannel.close();
-                connectedClients.remove(port);
-                System.out.println("客户端[" + port + "] 已断开连接到服务器 [" + serverSocketChannel.socket().getLocalPort()+ "]" );
-            }
-        }else {
-            System.out.println(" socket :null ,移除失败");
-        }
-    }
-
-    public synchronized void forwardMessage(SocketChannel client, String fwdMsg) throws IOException {
+    public  void forwardMessage(SocketChannel client, String fwdMsg) throws IOException, InterruptedException {
         for (SelectionKey key : selector.keys()){
             Channel connectedClient = key.channel();
             if (connectedClient instanceof ServerSocketChannel){
                 continue;
             }
             if (key.isValid() && !key.channel().equals(client)){
+                Thread.sleep(5000);
+                System.out.println("转发了一次");
                 writeBuffer.clear();
                 writeBuffer.put(charset.encode(getClientName(client) + fwdMsg));
                 writeBuffer.flip();
@@ -106,19 +82,22 @@ public class ChatServer {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
             // 关闭selector 会关闭 selector上注册的channel
             close(selector);
         }
     }
 
-    private void handles(SelectionKey key) throws IOException {
+    private void handles(SelectionKey key) throws IOException, InterruptedException {
         // ACCEPT事件 - 和客户端建立了连接
         if (key.isAcceptable()){
             ServerSocketChannel serverSocketChannel = (ServerSocketChannel) key.channel();
             // 同Bio 类似通过server的accept 返回 client
             SocketChannel client = serverSocketChannel.accept();
             client.configureBlocking(false);
+            // 服务器和客户端建立连接后，就会发生数据传输，所以监听Read事件
             client.register(selector,SelectionKey.OP_READ);
             System.out.println(getClientName(client) + "已连接");
         } else if (key.isReadable()){
@@ -137,7 +116,6 @@ public class ChatServer {
                 }
                 forwardMessage(client,fwdMsg);
             }
-
         }
     }
 
