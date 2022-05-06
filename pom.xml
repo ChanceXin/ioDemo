@@ -11,6 +11,7 @@
         <module>socket</module>
         <module>bioDemo</module>
         <module>nioDemo</module>
+        <module>AioDemo</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
