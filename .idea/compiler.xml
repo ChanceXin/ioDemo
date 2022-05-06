@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="nioDemo" />
         <module name="socket" />
+        <module name="AioDemo" />
         <module name="bioDemo" />
       </profile>
     </annotationProcessing>

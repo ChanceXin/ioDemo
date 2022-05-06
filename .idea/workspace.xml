@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="283b03ac-c4f5-403a-8c20-6b0dde793693" name="Changes" comment="">
+    <list default="true" id="283b03ac-c4f5-403a-8c20-6b0dde793693" name="Changes" comment="NIO client -unfinished">
+      <change afterPath="$PROJECT_DIR$/AioDemo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AioDemo/src/main/java/tutorial/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AioDemo/src/main/java/tutorial/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bioDemo/src/main/java/official/server/ChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nioDemo/src/main/java/official/client/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/nioDemo/src/main/java/official/client/ChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nioDemo/src/main/java/official/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/nioDemo/src/main/java/official/server/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nioDemo/src/main/java/official/server/ChatHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -27,12 +30,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="281F01WqY60ffmJh8uXDOUA9RPn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -44,6 +50,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="tutorial" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ioDemo\nioDemo\src\main\java" />
       <recent name="D:\ioDemo\nioDemo\src\main\resources" />
@@ -53,13 +62,52 @@
       <recent name="D:\ioDemo\nioDemo\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FileCopyDemo">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="ChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="official.client.ChatClient" />
       <module name="bioDemo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="official.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="official.client.ChatClient" />
+      <module name="nioDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="official.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="official.client.ChatClient" />
+      <module name="bioDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="official.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="official.server.ChatServer" />
+      <module name="nioDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="official.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,18 +129,11 @@
       </method>
     </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Client" />
-      <module name="socket" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileCopyDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FileCopy.FileCopyDemo" />
-      <module name="nioDemo" />
+      <option name="MAIN_CLASS_NAME" value="tutorial.Client" />
+      <module name="AioDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FileCopy.*" />
+          <option name="PATTERN" value="tutorial.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,8 +142,14 @@
       </method>
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Server" />
-      <module name="socket" />
+      <option name="MAIN_CLASS_NAME" value="tutorial.Server" />
+      <module name="AioDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tutorial.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,17 +157,17 @@
     <list>
       <item itemvalue="Application.ChatClient" />
       <item itemvalue="Application.ChatServer" />
-      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.ChatServer (1)" />
       <item itemvalue="Application.Server" />
-      <item itemvalue="Application.FileCopyDemo" />
+      <item itemvalue="Application.Client" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FileCopyDemo" />
-        <item itemvalue="Application.ChatServer" />
-        <item itemvalue="Application.ChatClient" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
+        <item itemvalue="Application.ChatClient" />
+        <item itemvalue="Application.ChatServer" />
+        <item itemvalue="Application.ChatClient" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +190,11 @@
       <workItem from="1651206342658" duration="5236000" />
       <workItem from="1651220374788" duration="2858000" />
       <workItem from="1651227130874" duration="8436000" />
-      <workItem from="1651390020619" duration="8364000" />
+      <workItem from="1651390020619" duration="8393000" />
+      <workItem from="1651459805693" duration="10243000" />
+      <workItem from="1651561510987" duration="2459000" />
+      <workItem from="1651732534484" duration="8924000" />
+      <workItem from="1651821829229" duration="129000" />
     </task>
     <task id="LOCAL-00001" summary="BIO demo complete">
       <created>1651072581578</created>
@@ -201,19 +252,65 @@
       <option name="project" value="LOCAL" />
       <updated>1651392937547</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="NIO client -unfinished">
+      <created>1651418767535</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651418767535</updated>
+    </task>
+    <task id="LOCAL-00010" summary="NIO client -unfinished">
+      <created>1651561762274</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651561762274</updated>
+    </task>
+    <task id="LOCAL-00011" summary="NIO client -unfinished">
+      <created>1651561776145</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1651561776145</updated>
+    </task>
+    <task id="LOCAL-00012" summary="NIO finished">
+      <created>1651561794538</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1651561794538</updated>
+    </task>
+    <task id="LOCAL-00013" summary="NIO client -unfinished">
+      <created>1651563342497</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1651563342497</updated>
+    </task>
+    <task id="LOCAL-00014" summary="NIO client finished">
+      <created>1651563355086</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1651563355086</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="BIO demo complete" />
     <MESSAGE value="Executors modify in server&#10;伪异步IO" />
     <MESSAGE value="ThreadPoolExecutor modify in server&#10;伪异步IO" />
     <MESSAGE value="NIO finish no selector" />
     <MESSAGE value="NIO server" />
-    <option name="LAST_COMMIT_MESSAGE" value="NIO server" />
+    <MESSAGE value="NIO finished" />
+    <MESSAGE value="NIO client -unfinished" />
+    <MESSAGE value="NIO client finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="NIO client finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
