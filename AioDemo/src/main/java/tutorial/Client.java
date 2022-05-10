@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.AsynchronousSocketChannel;
-import java.nio.charset.StandardCharsets;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
@@ -38,14 +37,16 @@ public class Client {
             BufferedReader consoleReader =
                     new BufferedReader(new InputStreamReader(System.in));
             while (true) {
-                String input = consoleReader.readLine();
 
+                String input = consoleReader.readLine();
                 byte[] inputBytes = input.getBytes();
                 ByteBuffer buffer = ByteBuffer.wrap(inputBytes);
                 // Futuer是一个记录了返回了多少个字节
+
                 Future<Integer> writeResult = clientChannel.write(buffer); // 写入通道，数组从buffer中读
                 writeResult.get(); //没有返回结果会阻塞
                 buffer.flip();
+
                 // 读通道，写入buffer
                 Future<Integer> readResult = clientChannel.read(buffer);
 

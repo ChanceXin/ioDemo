@@ -4,13 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="283b03ac-c4f5-403a-8c20-6b0dde793693" name="Changes" comment="NIO client -unfinished">
-      <change afterPath="$PROJECT_DIR$/AioDemo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AioDemo/src/main/java/tutorial/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AioDemo/src/main/java/tutorial/Server.java" afterDir="false" />
+    <list default="true" id="283b03ac-c4f5-403a-8c20-6b0dde793693" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AioDemo/src/main/java/official/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AioDemo/src/test/java/testsys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/BootStrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/Connector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/ConnectorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/HttpStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/TestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/processor/StaticProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/webroot/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/webroot/images/cuc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/webroot/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/test/java/RequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/test/java/ResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/test/java/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/test/java/util/TestUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nioDemo/src/main/java/official/server/ChatHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AioDemo/src/main/java/tutorial/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/AioDemo/src/main/java/tutorial/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AioDemo/target/classes/tutorial/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/AioDemo/target/classes/tutorial/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,12 +38,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="281F01WqY60ffmJh8uXDOUA9RPn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -39,11 +64,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/nioDemo/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webserver/src/main/webroot/images" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -54,83 +80,27 @@
       <recent name="tutorial" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ioDemo\webserver\src\main\webroot\images" />
+      <recent name="D:\ioDemo\webserver\src\main" />
       <recent name="D:\ioDemo\nioDemo\src\main\java" />
       <recent name="D:\ioDemo\nioDemo\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ioDemo\webserver\src\main\resources" />
       <recent name="D:\ioDemo\nioDemo\src\main\resources\var" />
       <recent name="D:\ioDemo\nioDemo\src\main\resources" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
-    <configuration name="ChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="official.client.ChatClient" />
-      <module name="bioDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="official.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="official.client.ChatClient" />
-      <module name="nioDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="official.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="official.client.ChatClient" />
-      <module name="bioDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="official.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChatServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="official.server.ChatServer" />
-      <module name="nioDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="official.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="official.server.ChatServer" />
-      <module name="bioDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="official.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tutorial.Client" />
-      <module name="AioDemo" />
+  <component name="RunManager" selected="Application.TestClient">
+    <configuration name="BootStrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tutorial.BootStrap" />
+      <module name="webserver" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tutorial.*" />
@@ -141,33 +111,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tutorial.Server" />
-      <module name="AioDemo" />
+    <configuration name="ConnectorUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tutorial.connector.ConnectorUtils" />
+      <module name="webserver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tutorial.*" />
+          <option name="PATTERN" value="tutorial.connector.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tutorial.connector.TestClient" />
+      <module name="webserver" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="webserver" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResponseTest.givenValidRequest_thenExtrackUri" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webserver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ResponseTest" />
+      <option name="METHOD_NAME" value="givenValidRequest_thenExtrackUri" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ChatClient" />
-      <item itemvalue="Application.ChatServer" />
-      <item itemvalue="Application.ChatServer (1)" />
-      <item itemvalue="Application.Server" />
-      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.BootStrap" />
+      <item itemvalue="Application.TestClient" />
+      <item itemvalue="Application.ConnectorUtils" />
+      <item itemvalue="JUnit.ResponseTest.givenValidRequest_thenExtrackUri" />
+      <item itemvalue="Application.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server" />
-        <item itemvalue="Application.ChatClient" />
-        <item itemvalue="Application.ChatServer" />
-        <item itemvalue="Application.ChatClient" />
+        <item itemvalue="Application.TestClient" />
+        <item itemvalue="Application.BootStrap" />
+        <item itemvalue="JUnit.ResponseTest.givenValidRequest_thenExtrackUri" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.ConnectorUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +188,11 @@
       <workItem from="1651459805693" duration="10243000" />
       <workItem from="1651561510987" duration="2459000" />
       <workItem from="1651732534484" duration="8924000" />
-      <workItem from="1651821829229" duration="129000" />
+      <workItem from="1651821829229" duration="5445000" />
+      <workItem from="1651898602341" duration="4790000" />
+      <workItem from="1651920398545" duration="1273000" />
+      <workItem from="1652078528074" duration="6080000" />
+      <workItem from="1652148303678" duration="7594000" />
     </task>
     <task id="LOCAL-00001" summary="BIO demo complete">
       <created>1651072581578</created>
@@ -294,7 +292,28 @@
       <option name="project" value="LOCAL" />
       <updated>1651563355086</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Aio">
+      <created>1651822032713</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651822032713</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Aio">
+      <created>1651822059735</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1651822059736</updated>
+    </task>
+    <task id="LOCAL-00017" summary="AIO">
+      <created>1651822094663</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1651822094663</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,9 +327,11 @@
     <MESSAGE value="NIO finish no selector" />
     <MESSAGE value="NIO server" />
     <MESSAGE value="NIO finished" />
-    <MESSAGE value="NIO client -unfinished" />
     <MESSAGE value="NIO client finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="NIO client finished" />
+    <MESSAGE value="NIO client -unfinished" />
+    <MESSAGE value="Aio" />
+    <MESSAGE value="AIO" />
+    <option name="LAST_COMMIT_MESSAGE" value="AIO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

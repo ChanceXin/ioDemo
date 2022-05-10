@@ -10,6 +10,7 @@
         <module name="nioDemo" />
         <module name="socket" />
         <module name="AioDemo" />
+        <module name="webserver" />
         <module name="bioDemo" />
       </profile>
     </annotationProcessing>
