@@ -5,29 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="283b03ac-c4f5-403a-8c20-6b0dde793693" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AioDemo/src/main/java/official/ChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AioDemo/src/test/java/testsys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/BootStrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/Connector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/ConnectorUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/HttpStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/TestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/processor/StaticProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/main/webroot/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/main/webroot/images/cuc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/main/webroot/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/test/java/RequestTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/test/java/ResponseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/test/java/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webserver/src/test/java/util/TestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/RequestFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/ResponseFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/processor/ServletProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webserver/src/main/webroot/TimeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AioDemo/src/main/java/tutorial/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/AioDemo/src/main/java/tutorial/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AioDemo/target/classes/tutorial/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/AioDemo/target/classes/tutorial/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/Connector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/webserver/src/main/java/tutorial/connector/TestClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,8 +140,8 @@
       <item itemvalue="Application.BootStrap" />
       <item itemvalue="Application.TestClient" />
       <item itemvalue="Application.ConnectorUtils" />
-      <item itemvalue="JUnit.ResponseTest.givenValidRequest_thenExtrackUri" />
       <item itemvalue="Application.test" />
+      <item itemvalue="JUnit.ResponseTest.givenValidRequest_thenExtrackUri" />
     </list>
     <recent_temporary>
       <list>
@@ -192,7 +180,8 @@
       <workItem from="1651898602341" duration="4790000" />
       <workItem from="1651920398545" duration="1273000" />
       <workItem from="1652078528074" duration="6080000" />
-      <workItem from="1652148303678" duration="7594000" />
+      <workItem from="1652148303678" duration="7970000" />
+      <workItem from="1652162144992" duration="5493000" />
     </task>
     <task id="LOCAL-00001" summary="BIO demo complete">
       <created>1651072581578</created>
@@ -313,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651822094663</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="AIO">
+      <created>1652156061319</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1652156061319</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -5,9 +5,10 @@ import java.net.Socket;
 
 public class TestClient {
     public static void main(String[] args) throws IOException, InterruptedException {
-        Socket socket = new Socket("localhost",8888);
+        Socket socket = new Socket("localhost",8889);
         OutputStream outputStream = socket.getOutputStream();
-        outputStream.write("GET \\index.html HTTP/1.1".getBytes());
+//        outputStream.write("GET \\index.html HTTP/1.1".getBytes());
+        outputStream.write("GET /servlet/TimeServlet HTTP/1.1".getBytes());
         socket.shutdownOutput();
         InputStream inputStream = socket.getInputStream();
         StringBuilder response = new StringBuilder();
@@ -19,8 +20,6 @@ public class TestClient {
                 response.append((char) buffer[i]);
             }
         }
-
-
         System.out.println(response.toString());
         socket.shutdownInput();
         socket.close();
